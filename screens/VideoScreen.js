@@ -65,7 +65,7 @@ class VideoScreen extends React.Component {
     fetchSourceUri(videoUrl) {
         this.setState({ loadingVideo: true });
         const type =
-            videoUrl?.startsWith("https://i.animeone.me/") ? "m3u8" :
+            videoUrl?.startsWith("https://korone.v.anime1.me") ? "m3u8" :
                 videoUrl?.startsWith("https://v.anime1.me/watch") ? "mp4" :
                     null;
         fetch(videoUrl)
